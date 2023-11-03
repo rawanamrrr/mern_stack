@@ -74,7 +74,7 @@ const ProductDetails = (history,match) => {
           <div className="size">
             <div className="d-flex ms-3">
               <div className="form-check" >
-                <input type="radio" name="S"  value={"S"} onChange={(e)=>setSize(e.target.value)} className="form-check-input"onSelect={product.size="S"} />
+                <input type="radio" name="S"  value={"S"} onChange={(e)=>setSize(e.target.value)} className="form-check-input"onchecked={product.size === "S"} />
                 <label htmlFor="S" className="form-check-label">S</label>
 
               </div>
@@ -84,7 +84,7 @@ const ProductDetails = (history,match) => {
           <div className="size">
             <div className="d-flex ms-3">
               <div className="form-check">
-                <input type="radio" name="S"  value={"M"} onChange={(e)=>setSize(e.target.value)} className="form-check-input" onSelect={product.size="M"} />
+                <input type="radio" name="S"  value={"M"} onChange={(e)=>setSize(e.target.value)} className="form-check-input" onchecked={product.size === "M"} />
                 <label htmlFor="M" className="form-check-label">M</label>
 
               </div>
@@ -93,7 +93,7 @@ const ProductDetails = (history,match) => {
           </div> <div className="size">
             <div className="d-flex ms-3">
               <div className="form-check">
-                <input type="radio" name="S"  value={"L"} onChange={(e)=>setSize(e.target.value)} className="form-check-input" onSelect={product.size="L"} />
+                <input type="radio" name="S"  value={"L"} onChange={(e)=>setSize(e.target.value)} className="form-check-input" onchecked={product.size === "L"} />
                 <label htmlFor="L" className="form-check-label">L</label>
 
               </div>
